@@ -1,6 +1,6 @@
 # CryptoMessenger-Backend
 
-Notice is a push notification system for school/club announcements built in AngularJS/Ionic. Features announcements by club/activity and push notifications.
+Backend to [CryptoMessenger](https://github.com/Alex-Motchoulski/CryptoMessenger), the secured SMS protocol.
 
 Built as part of the Mobile App Development Course (M257).
 
