@@ -18,7 +18,7 @@ app.post('/createUser', function(request, response) {
 
 app.get('/readUser', function(request, response) {
 
-}
+});
 
 app.post('/deleteUser', function(request, response) {
   response.send('Hello World!');
