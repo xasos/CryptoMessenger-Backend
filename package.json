@@ -1,22 +1,21 @@
 {
-  "name": "node-js-getting-started",
-  "version": "0.1.2",
-  "description": "A sample Node.js app using Express 4",
+  "name": "CryptoMessenger-Backend",
+  "version": "0.0.1",
+  "description": "Backend to CryptoMessenger, the secured SMS protocol",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
     "express": "~4.9.x",
-    "mongoose": "^3.8.23",
-    "pg": "^4.2.0"
+    "mongoose": "^3.8.23"
   },
   "engines": {
     "node": "0.10.x"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://github.com/xasos/CryptoMessenger-Backend"
   },
   "keywords": [
     "node",
