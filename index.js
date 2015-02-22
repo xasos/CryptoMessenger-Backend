@@ -26,7 +26,7 @@ app.get('/', function(request, response) {
 	response.send('Welcome to CryptoMessenger!');
 });
 
-app.post('/createuser', function(req, res {
+app.post('/createuser', function(req, res) {
 	Users.findOne({phoneNumber: req.body.phoneNumber}, function(err, user) {
 		if (err) return handleError(err);
 		if (user) {
