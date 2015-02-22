@@ -4,19 +4,15 @@ Backend to [CryptoMessenger](https://github.com/Alex-Motchoulski/CryptoMessenger
 
 Built as part of the Mobile App Development Course (M257).
 
-<!--## Get Started-->
-<!--```sh-->
-<!--$ git clone https://github.com/xasos/Notice-->
-<!--$ cd Notice-->
-<!--$ ionic serve-->
+## Get Started
+```sh
+$ git clone https://github.com/xasos/CryptoMessenger-Backend
+$ cd CryptoMessenger-Backend
 
-<!--# To build natively-->
-<!--$ ionic add <platform>-->
-<!--$ ionic build <platform>-->
-<!--$ ionic emulate <platform>-->
-<!--```-->
+# Insert your MongoDB URI onto line 4 before running app
 
-<!--This app is also available on the web [here](https://notice.herokuapp.com/) or [here](http://conantapps.com/dev/notice/).-->
+$ node app.js
+```
 
 ## License
 [MIT License](LICENSE)
