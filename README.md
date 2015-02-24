@@ -8,9 +8,10 @@ Built as part of the Mobile App Development Course (M257).
 ```sh
 $ mongod
 
-# In a seperate terminal instance
+# In a seperate terminal window
 $ git clone https://github.com/xasos/CryptoMessenger-Backend
 $ cd CryptoMessenger-Backend
+$ npm install
 $ node app.js
 ```
 
