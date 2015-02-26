@@ -71,16 +71,16 @@ app.get('/getuser/:phoneNumber', function(req, res) {
 	});
 });
 
-// Route to delete user
+// Route to delete user from database
 app.delete('/deleteuser/:phoneNumber', function(req, res) {
-	// Find user and delete in database using phone number as key
-	Users.findOneAndRemove({ phoneNumber: req.params.phoneNumber }, function(err, user) {
-		if (err) return handleError(err); // Handle Error
-		res.status(200).json({ message:  "User Successfully Deleted" });
+	// Uses phone numbers as key to find user in database and delete
+	Users.findOneAndRemove({phoneNumber: req.body.phoneNumber}, function(err, user) {
+		if (err) return handleError(err);
+		res.writeHead(200, "User Successfully Deleted", {'Content-Type': 'text/html'});
 	});
 });
 
-// Open app to listen on specified port
+// Listen on specified port
 app.listen(app.get('port'), function() {
-  console.log("Node app is running at localhost:" + app.get('port'));
+	console.log("Node app is running at localhost:" + app.get('port'));
 });
