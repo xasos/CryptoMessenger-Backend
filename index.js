@@ -22,12 +22,19 @@ mongoose.connect(config.mongoURL, function(error) {
 // Mongoose Schema Definition
 var Schema = mongoose.Schema;
 var UserSchema = new Schema({
-    phoneNumber: { type:String, required:true, min:1 },
-    publicKey: { type:String, required:true, min:1 }
+    phoneNumber: { type: String, required: true, min: 1 },
+    publicKey: { type: String, required: true, min: 1 }
 });
 
 // Mongoose Model Definition
-var Users = mongoose.model('users', UserSchema);
+var Users = mongoose.model('user', UserSchema);
+
+app.get('/test', function(request, response) {
+	Users.find(function(err, user) {
+		console.log(user);
+		response.send(user);
+	});
+});
 
 // Define Routes
 app.get('/', function(request, response) {
