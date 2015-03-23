@@ -1,6 +1,6 @@
 # CryptoMessenger-Backend
 
-Backend to [CryptoMessenger](https://github.com/Alex-Motchoulski/CryptoMessenger), the secured SMS protocol.
+Lightweight backend to CryptoMessenger, a secure way to send SMS.
 
 Built as part of the Mobile App Development Course (M257).
 
