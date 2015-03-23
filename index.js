@@ -2,7 +2,6 @@ var express = require('express');
 var mongoose = require('mongoose');
 var config = require('./config');
 var bodyParser = require('body-parser');
-// var User = require('./User');
 var app = express();
 app.use(bodyParser.urlencoded());
 
@@ -31,11 +30,10 @@ var Users = mongoose.model('user', UserSchema);
 
 app.get('/test', function(request, response) {
 	Users.find(function(err, user) {
-		console.log(user);
 		response.send(user);
 	});
 });
-
+c
 // Define Routes
 app.get('/', function(request, response) {
 	response.send('Welcome to CryptoMessenger!');
@@ -64,15 +62,11 @@ app.post('/createuser', function(req, res) {
 app.get('/getuser/:phoneNumber', function(req, res) {
 	// Find user in database using phone number as key
 	Users.findOne({ phoneNumber: req.params.phoneNumber}, function(err, user) {
-		console.log("works");
-		console.log(user);
 		if (err) return handleError(err); // Handle Error
 		// If user exists return data
 		if (user) {
-			console.log("works2");
 			res.json({ phoneNumber: user.phoneNumber, publicKey: user.publicKey });
 		} else {
-			console.log("umm");
 			res.status(404).json({ message: "User Doesn't Exist" });			
 		}
 	});
