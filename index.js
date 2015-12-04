@@ -33,7 +33,7 @@ app.get('/test', function(request, response) {
 		response.send(user);
 	});
 });
-c
+
 // Define Routes
 app.get('/', function(request, response) {
 	response.send('Welcome to CryptoMessenger!');
